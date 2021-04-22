@@ -1,0 +1,79 @@
+{% extends "proyecto_final/base.html" %} {%load static%} {% block content %}
+<!-- Heading -->
+<section class="page-section clearfix">
+    <div class="container">
+        <div class="intro">
+            <img class="intro-img img-fluid mb-3 mb-lg-0 rounded" src="{% static '/img/paper.png' %}" alt="">
+            <div class="intro-text left-0 text-center  p-5 rounded" id="n">
+                <h2 class="section-heading mb-4">
+                    <span class="section-heading-upper">Productos de Alta Calidad</span>
+                    <span class="section-heading-lower">Puntualidad y seguridad</span>
+                </h2>
+                <p class="mb-3">Entregas en menos de 48 horas con el servicio base y en menos de 24 con el servicio expres. Garantizamos la seguridad de tus pedidos. .
+                </p>
+                <button type="button" class="btn btn-primary">
+                        <a>Contactar</a> <span class="badge bg-secondary"></span>
+                        <span class="visually-hidden">unread messages</span>
+                      </button>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<!-- Message -->
+<section class="page-section cta">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-9 mx-auto">
+                <div class="cta-inner text-center rounded">
+                    <h2 class="section-heading mb-4">
+                        <span class="section-heading-upper">Compromiso total</span>
+                        <span class="section-heading-lower">Garantizado</span>
+                    </h2>
+                    <p class="mb-0">Con más de 75 años de experiencia a nuestras espaldas, desde Gestión de Pedidos tenemos los conocimientos y herramientas necesarios para llevar cualquier objeto a la puerta de su casa con puntualidad y profesionalidad.</p>
+                </div>
+            </div>
+        </div>
+
+        <br>
+        <br>
+        <span class="section-heading-lower">
+                <h2>servicios</h2>
+            </span>
+        <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      Envios Express
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <strong>This is the first item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well
+                        as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though
+                        the transition does limit overflow.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      Delivery a Nivel Nacional
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well
+                        as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though
+                        the transition does limit overflow.
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+{% endblock %}
