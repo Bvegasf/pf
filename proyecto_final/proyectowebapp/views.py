@@ -1,4 +1,5 @@
 from django.shortcuts import render,HttpResponse
+from service.models import service
 
 
 # Create your views here.
@@ -9,9 +10,7 @@ def home(request):
 
 
 
-def services(request):
 
-    return render(request, "proyecto_final/service.html")
 
 
 
