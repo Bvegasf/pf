@@ -4,10 +4,11 @@ from service.models import service
 
 
 # Create your views here.
+
 def services(request):
 
 
     serv = service.objects.all()
 
 
-    return render(request, "service.html", {"serv":serv})
+    return render(request, "proyecto_final/service.html", {"serv":serv})

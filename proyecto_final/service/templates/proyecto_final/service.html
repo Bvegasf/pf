@@ -1,0 +1,22 @@
+{% extends "proyecto_final/base.html" %} {%load static%} {% block content %} {% for service in serv %}
+
+<!-- services-->
+<section class="page-section clearfix">
+    <div class="container">
+        <div class="intro">
+            <img class="intro-img img-fluid mb-3 mb-lg-0 rounded" src="{{service.image.url}}" alt="services" style="width:60%; height:65%;">
+            <div class="intro-text left-0 text-center  p-5 rounded" id="n">
+                <h2 class="section-heading mb-4">
+                    <span class="section-heading-lower">{{service.title}}</span>
+                    <!-- <span class="section-heading-lower">Puntualidad y seguridad</span>-->
+                </h2>
+                <p class="mb-3">{{service.description}}
+                </p>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+
+{% endfor %} {% endblock %}
