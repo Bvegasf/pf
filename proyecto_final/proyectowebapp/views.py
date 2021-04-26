@@ -18,8 +18,7 @@ def shop(request):
     return render(request, "proyecto_final/shopp.html")
 
 
-def blog(request):
-    return render(request, "proyecto_final/blog.html")
+
 
 
 def contacus(request):

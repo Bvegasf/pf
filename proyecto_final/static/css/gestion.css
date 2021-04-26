@@ -274,3 +274,8 @@ ul.errorlist {
 #n {
     background-color: rgba(8, 64, 43) !important;
 }
+
+#img {
+    width: auto;
+    height: auto;
+}
