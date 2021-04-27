@@ -43,19 +43,19 @@
       </button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav mx-auto">
-                    <li class="nav-item {% if request.path == '/home/' %}active{% endif %} px-lg-4">
+                    <li class="nav-item {% if request.path|slice:':6' == '/home/' %}active{% endif %} px-lg-4">
                         <a class="nav-link text-uppercase text-expanded" href="{% url 'home' %}">Inicio</a>
                     </li>
-                    <li class="nav-item {% if request.path == '/services/' %} active {% endif %} px-lg-4">
+                    <li class="nav-item {% if request.path|slice:':9' == '/service/' %} active {% endif %} px-lg-4">
                         <a class="nav-link text-uppercase text-expanded" href="{% url 'service' %}">Servicios</a>
                     </li>
-                    <li class="nav-item {% if request.path == '/shop/' %} active {% endif %} px-lg-4">
+                    <li class="nav-item {% if request.path|slice:':6' == '/shop/' %} active {% endif %} px-lg-4">
                         <a class="nav-link text-uppercase text-expanded" href="{% url 'shop' %}">Tienda</a>
                     </li>
-                    <li class="nav-item {% if request.path == '/contacus/' %} active {% endif %} px-lg-4">
+                    <li class="nav-item {% if request.path|slice:':10' == '/contacus/' %} active {% endif %} px-lg-4">
                         <a class="nav-link text-uppercase text-expanded" href="{% url 'contacus' %}">Contacto</a>
                     </li>
-                    <li class="nav-item {% if request.path == '/blog/' %} active {% endif %} px-lg-4">
+                    <li class="nav-item {% if request.path|slice:':6' == '/blog/' %} active {% endif %} px-lg-4">
                         <a class="nav-link text-uppercase text-expanded" href="{% url 'blog' %}">Blog</a>
                     </li>
 

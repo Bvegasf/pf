@@ -279,3 +279,13 @@ ul.errorlist {
     width: auto;
     height: auto;
 }
+
+a.link_Category {
+    color: white;
+    text-decoration: underline;
+}
+
+a.link_Category:hover {
+    color: rgba(0, 0, 0);
+    text-decoration: none;
+}

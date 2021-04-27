@@ -13,8 +13,9 @@
                 <div class="card-body col-12" style="  height: 300px; overflow: scroll;">
                     <h5 class="card-title text-wrap">{{Post.title}}</h5>
                     <p class="card-text">{{Post.content}}</p>
-                    <a href="#" class="btn btn-primary">Ver</a>
+
                 </div>
+                <a href="#" class="btn btn-primary">Ver</a>
             </div>
         </div>
 
@@ -30,7 +31,9 @@
 
 <section>
     <div style="width:75%; margin: auto; text-align: center; color:white">
-        Categorias: {% for Post in post %} {% for categoria in Post.category.all %} {{categoria.name}} &nbsp; {% endfor %} {% endfor %}
+        Categorias: {% for Post in post %} {% for category in Post.category.all %}
+
+        <a href="{%url 'category' category.id %}" class="link_Category">{{category.name}}</a> &nbsp; {% endfor %} {% endfor %}
     </div>
 </section>
 {% endblock %}
