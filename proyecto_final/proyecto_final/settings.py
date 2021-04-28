@@ -41,6 +41,8 @@ INSTALLED_APPS = [
     'proyectowebapp',
     'service',
     'blog',
+    'contacus',
+
 ]
 
 MIDDLEWARE = [

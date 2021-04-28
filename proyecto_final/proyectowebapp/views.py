@@ -21,6 +21,5 @@ def shop(request):
 
 
 
-def contacus(request):
-    return render(request, "proyecto_final/contacus.html")
+
     
