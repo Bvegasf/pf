@@ -1,6 +1,29 @@
 {% extends "proyecto_final/base.html" %} {%load static%} {% block content %}
 
-<div>
-    {{Formulario}}
+<div class="contenedor">
+    <h3 id="tituloform">Dejanos saber que necesitas</h3>
+    <hr>
+    <form action="" method="POST" class="formulario">
+        {% csrf_token %}
+        <table style="color: white;margin:auto">
+            {{Formulario.as_table}}
+        </table>
+        <button type="submit" class="btn btn-primary mt-4" value="enviar">enviar</button>
+        <hr>
+    </form>
+
+    <section>
+        <div>
+            <h3 style="margin-left: 5px; color:white; margin-bottom: 5px;">
+                Encuentranos en:</h3>
+        </div>
+        <div style="margin: auto;">
+
+            <a href="#" style="margin: auto;"><img src="{% static '/icon/facebook-brands.svg' %}" alt="Facebook" class="icono"></a>
+            <a href="#" style="margin: auto;"><img src="{% static '/icon/instagram-brands.svg' %}" alt="Facebook" class="icono"></a>
+            <a href="#" style="margin: auto;"><img src="{% static '/icon/whatsapp-brands.svg' %}" alt="Facebook" class="icono"></a>
+
+        </div>
+    </section>
 </div>
 {% endblock %}

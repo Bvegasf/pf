@@ -289,3 +289,38 @@ a.link_Category:hover {
     color: rgba(0, 0, 0);
     text-decoration: none;
 }
+
+.contenedor {
+    background-color: rgba(8, 64, 43, 0.8);
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding: 15px;
+    border-radius: 5px;
+    align-content: center;
+}
+
+.formulario {
+    text-align: center;
+}
+
+table.formulario {
+    margin: auto;
+    border-color: white;
+}
+
+#tituloform {
+    font-family: 'Raleway';
+    color: white;
+    text-align: center;
+    margin: 3px auto 10px;
+}
+
+.icono {
+    width: 50px;
+    height: auto;
+    margin: auto;
+    padding: 5px;
+}
