@@ -1,6 +1,35 @@
 {% extends "proyecto_final/base.html" %} {%load static%} {% block content %}
 
-<h1>Hola</h1>
+<section class="container-fluid mt-3 mb-3">
+
+
+
+    <div class="row d-flex flex-row">
+        {% for productos in producto %}
+        <div class="col-4 mt-3 mb-4 ml-3 mr-3">
+            <div class="card">
+
+                <img src="{{productos.image.url}}" alt="" class="card-img-top" style="Width:auto; height:300;">
+
+                <div class="card-body col-12" style="  height: 160px; border-radius: 3px">
+                    <h5 class="card-title text-wrap"> {{productos.name}}</h5>
+                    <p class="card-text">Precio: {{productos.price}} $</p>
+                    <p class="card-text">Categoria: {{productos.category.name}}</p>
+                    <div><span class="badge bg-success">{{productos.tag.name}}</span></div>
+
+                </div>
+                <a href="#" class="btn btn-success">Comprar</a>
+            </div>
+        </div>
+
+
+        {% endfor %}
+    </div>
+
+
+
+    </div>
+</section>
 
 
 {% endblock %}
