@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'service',
     'blog',
     'contacus',
+    'shopp',
 
 ]
 

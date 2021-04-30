@@ -3,8 +3,12 @@
     {% if "Correcto" in request.GET %}
     <div class="alert alert-success" role="alert">
         La informacion ha sido enviada con exito, gracias por contactarnos!
-    </div> {% endif %}
+    </div> {% endif %} {% if "Incorrecto" in request.GET %}
+    <div class="alert alert-danger" role="alert">
+        Ups! ah ocurrido un error. Intentalo de nuevo
+    </div>
 
+    {% endif %}
     <h3 id="tituloform">Dejanos saber que necesitas</h3>
     <hr>
     <form action="" method="POST" class="formulario">
