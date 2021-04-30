@@ -47,5 +47,5 @@ class Products(models.Model):
 
 
     def __str__(self):
-        return f'Producto: {self.name}  Precio: {self.price} Disponibilidad: {self.is_available}'
+        return f'Producto: {self.name}  Precio: {self.price}$ Disponibilidad: {self.is_available}'
 
