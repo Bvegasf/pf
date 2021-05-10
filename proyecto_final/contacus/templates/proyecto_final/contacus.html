@@ -1,5 +1,5 @@
 {% extends "proyecto_final/base.html" %} {%load static%} {% block content %}
-<div class="contenedor">
+<div class="contenedor mt-3 mb-3 " style="margin: auto;">
     {% if "Correcto" in request.GET %}
     <div class="alert alert-success" role="alert">
         La informacion ha sido enviada con exito, gracias por contactarnos!
@@ -9,11 +9,13 @@
     </div>
 
     {% endif %}
+
+
     <h3 id="tituloform">Dejanos saber que necesitas</h3>
     <hr>
     <form action="" method="POST" class="formulario">
         {% csrf_token %}
-        <table style="color: white;margin:auto">
+        <table style="color: white; margin:auto">
             {{Formulario.as_table}}
         </table>
         <button type="submit" class="btn btn-primary mt-4" value="enviar">enviar</button>

@@ -1,10 +1,22 @@
 {% extends "proyecto_final/base.html" %} {%load static%} {% block content %}
 
-<section class="container mt-3 mb-3">
+<section class="container mt-3  mb-3">
+
+    <div class="col-2 de-flex flex-row" style="float: right;">
+        <p style="color: white;">
+            total: {{total}} $
+
+
+        </p>
+    </div>
 
 
 
-    <div class="row d-flex flex-row">
+
+
+
+
+    <div class="row d-flex flex-row ">
         {% for productos in producto %}
         <div class="col-lg-4 col-xl-4 col-md-6 col-sm-12 mt-3 mb-4 ml-3 mr-3">
             <div class="card">
